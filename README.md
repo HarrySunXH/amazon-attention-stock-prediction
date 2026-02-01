@@ -1,5 +1,10 @@
 # Amazon Stock Price Prediction (Attention-based Hybrid Models)
 
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Stars](https://img.shields.io/github/stars/HarrySunXH/amazon-attention-stock-prediction?style=social)
+
 Project showcase repo for stock price prediction using deep learning and attention-based hybrid models. Based on the paper **“Application of Attention-Based LSTM Hybrid Models for Stock Price Prediction”** (2024), and implemented primarily in `amazon_stock_prediction.ipynb`.
 
 ## Highlights
@@ -19,6 +24,11 @@ Project showcase repo for stock price prediction using deep learning and attenti
 stock-prediction-paper/
 ├── notebooks/
 │   └── amazon_stock_prediction.ipynb          # Main notebook (primary implementation)
+├── src/                                       # modularized scripts
+│   ├── data_utils.py
+│   ├── features.py
+│   ├── models.py
+│   └── train.py
 ├── data/
 │   ├── amazon_data_close.csv
 │   └── stock_data_amazon.csv
@@ -56,6 +66,10 @@ jupyter notebook notebooks/amazon_stock_prediction.ipynb
 
 ![AMZN Closing Price](results/plots/amazon_close_price.png)
 
+**Prediction Curve (Naive Baseline)**
+
+![Prediction Curve](results/plots/prediction_curve.png)
+
 ---
 
 ## Results & Comparison
@@ -70,7 +84,7 @@ jupyter notebook notebooks/amazon_stock_prediction.ipynb
 | GRU-LSTM-attention | 1.243342 | 0.958472 | 36.4 |
 | CNN-BiLSTM-GRU-attention | 1.054589 | 0.970123 | 59.2 |
 
-![Model Comparison](results/plots/model_comparison.png)
+![RMSE & R² Bar](results/plots/model_rmse_r2_bars.png)
 
 ---
 
