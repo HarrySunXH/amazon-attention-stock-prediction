@@ -1,0 +1,10 @@
+python>=3.9
+numpy
+pandas
+scikit-learn
+tensorflow
+keras
+matplotlib
+pandas_datareader
+yfinance
+ta-lib
