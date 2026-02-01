@@ -8,13 +8,17 @@ Project showcase repo for stock price prediction using deep learning and attenti
 - **Metrics**: RMSE, R²
 - **Best model (paper)**: CNN-BiLSTM-GRU-Attention (RMSE ≈ 1.0546, R² ≈ 0.9701)
 
+**Preview**
+
+![AMZN Closing Price](results/plots/amazon_close_price.png)
+
 ---
 
 ## Repository Structure (suggested)
 ```
 stock-prediction-paper/
 ├── notebooks/
-│   └── Amazon-Copy1.ipynb          # Main notebook (primary implementation)
+│   └── amazon_stock_prediction.ipynb          # Main notebook (primary implementation)
 ├── data/
 │   ├── amazon_data_close.csv
 │   └── stock_data_amazon.csv
@@ -36,7 +40,7 @@ stock-prediction-paper/
 pip install -r requirements.txt
 
 # Run notebook
-jupyter notebook notebooks/Amazon-Copy1.ipynb
+jupyter notebook notebooks/amazon_stock_prediction.ipynb
 ```
 
 ### Core Dependencies

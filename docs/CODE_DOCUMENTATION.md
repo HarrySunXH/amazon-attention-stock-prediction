@@ -1,6 +1,6 @@
 # Code Documentation — Amazon Stock Price Prediction
 
-This document provides a full walkthrough of the **Amazon-Copy1.ipynb** pipeline, plus code templates for **all models mentioned in the paper**. If a model isn’t fully present in the notebook, a clean reference implementation is included here.
+This document provides a full walkthrough of the **amazon_stock_prediction.ipynb** pipeline, plus code templates for **all models mentioned in the paper**. If a model isn’t fully present in the notebook, a clean reference implementation is included here.
 
 ---
 
