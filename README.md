@@ -50,21 +50,27 @@ jupyter notebook notebooks/amazon_stock_prediction.ipynb
 - `ta-lib` (technical indicators)
 - `yfinance`, `pandas_datareader`
 
+## Visualization
+
+**AMZN Closing Price**
+
+![AMZN Closing Price](results/plots/amazon_close_price.png)
+
 ---
 
 ## Results & Comparison
 
-**Model Comparison (from paper)**
+**Model Comparison (from paper, Table 1)**
 
-| Model | RMSE | R² | Notes |
-|---|---:|---:|---|
-| LSTM | 2.103577 | 0.881128 | Lowest performance in paper |
-| CNN-BiLSTM-GRU-Attention | 1.054589 | 0.970123 | Best performance |
-| Self-Attention | See Table 1 in paper | See Table 1 in paper | Reported in paper |
-| CNN-LSTM-Attention | See Table 1 in paper | See Table 1 in paper | Reported in paper |
-| GRU-LSTM-Attention | See Table 1 in paper | See Table 1 in paper | Reported in paper |
+| Model | RMSE | R² | CPU Time (s) |
+|---|---:|---:|---:|
+| LSTM | 2.103577 | 0.881128 | 7.31 |
+| Self-attention | 1.754763 | 0.917282 | 16.5 |
+| CNN-LSTM-attention | 1.263602 | 0.957107 | 35.8 |
+| GRU-LSTM-attention | 1.243342 | 0.958472 | 36.4 |
+| CNN-BiLSTM-GRU-attention | 1.054589 | 0.970123 | 59.2 |
 
-![RMSE Comparison](results/plots/model_rmse_comparison.png)
+![Model Comparison](results/plots/model_comparison.png)
 
 ---
 
